@@ -11,7 +11,7 @@ Code butonuna tıklayın. Sonrasında,
 
 ZIP olarak indirin. Python'u Bilgisayarınıza kurun. Sonrasında pyautogui ve pyperclip modülünü "pip install pyautogui pyperclip " sonrasında kodu direkt olarak dosyanın üzerine tıklayarak çalıştırabilirsiniz.
 
-# Sanal Ses Kartı Kurumu
+# Sanal Ses Kartı Kurulumu
 VDS'e sanal ses kartı kurmak için:
 - İndirme linki: https://vb-audio.com/Cable/
 - indirdikten sonra .zip içerisinden çıkartın
