@@ -38,11 +38,10 @@ def play_gas_station_vibes():
     pyautogui.click(400, 300, duration=2)
     time.sleep(2)
     pyautogui.click(600, 430, duration=2)
-    time.sleep(10)
-    pyautogui.click(620, 680, duration=1)
+
     
 def play_deep_chill():
-    playlist = "Deep Chill"
+    playlist = "Deep Chill 24/7"
     print(f">>> Playlist aranıyor: {playlist}")
     pyautogui.click(800, 80, duration=1)
     pyautogui.write(playlist)
@@ -57,8 +56,7 @@ def play_deep_chill():
     pyautogui.click(400, 300, duration=2)
     time.sleep(2)
     pyautogui.click(600, 430, duration=2)
-    time.sleep(10)
-    pyautogui.click(620, 680, duration=1)
+
 
 def play_slow_mood_radio():
     playlist = "Slow Mood Radio"
@@ -76,8 +74,7 @@ def play_slow_mood_radio():
     pyautogui.click(400, 300, duration=2)
     time.sleep(2)
     pyautogui.click(600, 430, duration=2)
-    time.sleep(10)
-    pyautogui.click(620, 680, duration=1)
+
     
 def play_deep_echo_room():
     playlist = "Deep Echo Room"
@@ -95,8 +92,7 @@ def play_deep_echo_room():
     pyautogui.click(400, 300, duration=2)
     time.sleep(2)
     pyautogui.click(600, 430, duration=2)
-    time.sleep(10)
-    pyautogui.click(620, 680, duration=1)
+
     
 # --- Diğer Fonksiyonlar ---
 
@@ -117,7 +113,7 @@ def music_like(duration_minutes=2):
     special_click_interval = 60  # 1 dakika
 
     next_special_click = special_click_interval
-    y_positions = [590, 540, 450, 490, 400, 350, 300, 250]
+    y_positions = [600, 550, 500, 450, 400, 360, 310, 260]
 
     while elapsed < duration_minutes * 60:
         pyautogui.click(950, random.choice(y_positions), duration=1)
@@ -138,7 +134,9 @@ def listen_playlist_for(hours):
 
     elapsed = 0
     shuffle_interval = 3600  # 1 saat
+    special_click_interval = 1800
     next_shuffle_time = shuffle_interval
+    next_special_click = special_click_interval
 
     y_positions = [590, 540, 450, 490, 400, 350, 300, 250]
 
@@ -151,6 +149,10 @@ def listen_playlist_for(hours):
             print(f">>> {elapsed // 3600}. saat: Shuffle butonuna tıklanıyor.")
             pyautogui.click(600, 430, duration=1)
             next_shuffle_time += shuffle_interval
+                 
+        if elapsed >= next_special_click:
+            pyautogui.click(750, 150, duration=1)
+            next_special_click += special_click_interval
 
         print(f"   Geçen süre: {elapsed // 3600} saat {elapsed // 60 % 60} dakika {elapsed % 60} saniye")
 
@@ -161,7 +163,7 @@ def logout_user():
     time.sleep(4)
     pyautogui.click(200, 60, duration=1)
     time.sleep(2)
-    pyautogui.click(250, 280, duration=1)  # Logout butonu
+    pyautogui.click(250, 300, duration=1)  # Logout butonu
     time.sleep(10)
     
 def login_user(email):
