@@ -30,13 +30,13 @@ def play_gas_station_vibes():
     time.sleep(4)
     pyautogui.press("enter")
     pyautogui.click(400, 80, duration=1)
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click(600, 125, duration=1)  
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click()
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click(400, 300, duration=2)
-    time.sleep(2)
+    time.sleep(5)
     pyautogui.click(600, 430, duration=2)
 
     
@@ -48,13 +48,13 @@ def play_deep_chill():
     time.sleep(4)
     pyautogui.press("enter")
     pyautogui.click(400, 80, duration=1)
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click(700, 125, duration=1)
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click()
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click(400, 300, duration=2)
-    time.sleep(2)
+    time.sleep(5)
     pyautogui.click(600, 430, duration=2)
 
 
@@ -66,13 +66,13 @@ def play_slow_mood_radio():
     time.sleep(4)
     pyautogui.press("enter")
     pyautogui.click(400, 80, duration=1)
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click(700, 125, duration=1)
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click()
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click(400, 300, duration=2)
-    time.sleep(2)
+    time.sleep(5)
     pyautogui.click(600, 430, duration=2)
 
     
@@ -84,13 +84,13 @@ def play_deep_echo_room():
     time.sleep(4)
     pyautogui.press("enter")
     pyautogui.click(400, 80, duration=1)
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click(700, 125, duration=1)
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click()
-    time.sleep(3)
+    time.sleep(5)
     pyautogui.click(400, 300, duration=2)
-    time.sleep(2)
+    time.sleep(5)
     pyautogui.click(600, 430, duration=2)
 
     
@@ -113,7 +113,7 @@ def music_like(duration_minutes=2):
     special_click_interval = 60  # 1 dakika
 
     next_special_click = special_click_interval
-    y_positions = [600, 550, 500, 450, 400, 360, 310, 260]
+    y_positions = [590, 550, 510, 470, 430, 390, 350, 310]
 
     while elapsed < duration_minutes * 60:
         pyautogui.click(950, random.choice(y_positions), duration=1)
@@ -138,7 +138,7 @@ def listen_playlist_for(hours):
     next_shuffle_time = shuffle_interval
     next_special_click = special_click_interval
 
-    y_positions = [590, 540, 450, 490, 400, 350, 300, 250]
+    y_positions = [590, 550, 510, 470, 430, 390, 350, 310]
 
     while elapsed < seconds:
         pyautogui.click(950, random.choice(y_positions), duration=1)
